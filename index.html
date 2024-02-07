@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Comments</title>
+<style>
+     
+    #comments {
+	border: 1px solid orange
+ 
+    }
+
+     
+    .comment {
+        margin-bottom: 20px;
+    }
+
+    .comment .author {
+        font-weight: bold;
+    }
+
+    .comment .date {
+        color: #ccc;
+         
+    }
+
+    .comment .content {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<main role="main">
+    <section id="comments">
+	
+        <article class="comment" data-key="id_1">
+            <header>
+			<div class="vote"><span class="up"></span><span class="num">12</span><span class="down"></span></div>
+                <h2 class="author">amyrobson</h2>
+                <time class="date">1 month ago</time>
+				<div class="reply">Reply</div>
+				<div class="delete">Delete</div>
+				<div class="edit">Edit</div>
+            </header>
+            <div class="content">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</div>
+        </article>
+		
+		
+			
+        <article class="comment" data-key="id_2">
+            <header>
+			<div class="vote"><span class="up"></span><span class="num">12</span><span class="down"></span></div>
+                <h2 class="author">Mr Smith</h2>
+                <time class="date">2 month ago</time>
+				<div class="reply">Reply</div>
+				<div class="delete">Delete</div>
+				<div class="edit">Edit</div>
+            </header>
+            <div class="content">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</div>
+			
+			
+			        <article class="comment" data-key="id_3" data-parent-id="id_2">
+						<header>
+						<div class="vote"><span class="up"></span><span class="num">12</span><span class="down"></span></div>
+							<h2 class="author">Mr Smith</h2>
+							<time class="date">2 month ago</time>
+							<div class="reply">Reply</div>
+							<div class="delete">Delete</div>
+							<div class="edit">Edit</div>
+						</header>
+						<div class="content">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</div>
+					</article>
+		
+						
+			        <article class="comment" data-key="id_4" data-parent-id="id_2">
+						<header>
+						<div class="vote"><span class="up"></span><span class="num">12</span><span class="down"></span></div>
+							<h2 class="author">Mr Smith <span>YOU</span></h2>
+							<time class="date">2 month ago</time>
+							<div class="reply">Reply</div>
+							<div class="delete">Delete</div>
+							<div class="edit">Edit</div>
+						</header>
+						<div class="content">
+					
+							<form class="comment_form_Edit">
+								<textarea placeholder="Add comment...">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</textarea>
+								<button type="submit">Send</button>
+							</form>
+							
+						</div>
+					</article>
+		
+        </article>
+		
+		
+		<form class="comment_form">
+			<textarea placeholder="Add comment..."></textarea>
+			<button type="submit">Send</button>
+		</form>
+		 
+
+    </section>
+</main>
+</body>
+</html>
